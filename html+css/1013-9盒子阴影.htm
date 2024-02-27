@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            margin: 0 auto;
+            /*1. box-shadow: 10px 10px 10px red, -10px -10px 10px blue; */
+            /*2. box-shadow: 10px 10px 10px 10px red, -10px -10px 10px blue; */
+            /*2. 注意spread(阴影的大小)的位置 在模糊的后面 颜色的前面 */
+            box-shadow: -10px -10px 10px blue inset;
+            /* inset是内阴影 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

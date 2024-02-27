@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目标伪类选择器-手风琴(配合锚点使用)</title>
+    <style>
+        div.content {
+            display: none;
+        }
+        
+        div.content:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#aaa">aaa</a>
+        <div id="aaa" class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus eius, laborum provident eum impedit soluta iusto, voluptatibus voluptate tenetur laboriosam, recusandae velit pariatur illum perspiciatis. Blanditiis voluptas quasi quam?
+        </div>
+    </div>
+
+    <div>
+        <a href="#bbb">bbb</a>
+        <div id="bbb" class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus eius, laborum provident eum impedit soluta iusto, voluptatibus voluptate tenetur laboriosam, recusandae velit pariatur illum perspiciatis. Blanditiis voluptas quasi quam?
+        </div>
+    </div>
+
+    <div>
+        <a href="#ccc">ccc</a>
+        <div id="ccc" class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe delectus eius, laborum provident eum impedit soluta iusto, voluptatibus voluptate tenetur laboriosam, recusandae velit pariatur illum perspiciatis. Blanditiis voluptas quasi quam?
+        </div>
+    </div>
+</body>
+
+</html>

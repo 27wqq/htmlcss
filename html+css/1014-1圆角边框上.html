@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 0 auto;
+            /* border-radius: 10px; */
+            /* border-radius: 10px 50px; */
+            /* border-radius: 10px 50px 100px; */
+            /* border-radius: 10px 50px 70px 100px; */
+            border-radius: 10px 0px 0px 0px;
+            /* border-top-left-radius这样写必须是垂直方向在前水平方向在后 */
+            border-top-left-radius: 10px;
+            /*左上角*/
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 60px;
+            /* border-radius后接 px 或者 百分比 
+                当接收一个值V1的时候 表示4个角都一样
+                当接收2个值V1、V2的时候 表示左上右下， 左下右上一致
+                当接收3个值V1、V2、V3的时候 表示左上，左下右上 右下一致
+                当接收3个值V1、V2、V3、V4的时候，顺时针
+
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

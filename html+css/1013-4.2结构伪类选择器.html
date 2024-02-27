@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独生子女</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+        
+        div p:only-child {
+            background: red;
+            /* 选中div下的只有一个P标签的 */
+        }
+        
+        div:empty {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>111</p>
+        <p>222</p>
+    </div>
+
+    <div>
+        <p>1111</p>
+    </div>
+
+
+</body>
+
+</html>

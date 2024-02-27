@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* animation: wqqrun1 2s linear; */
+            /* animation: wqqrun2 10s linear; */
+            /* linear匀速的执行 */
+            /* animation: wqqrun1 2s linear 1s 1000000; */
+            /* wqqrun1动画名 2s持续时间 linear动画过渡类型 1s是动画延迟时间 重复执行次数*/
+            animation: wqqrun1 2s linear infinite;
+            /* infinite 无限次 */
+        }
+        /* 声明动画 */
+        
+        @keyframes wqqrun1 {
+            from {
+                /*from to这种写法只能支持两种状态的写法*/
+                /*初始状态*/
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+            to {
+                /*结束状态*/
+                width: 400px;
+                height: 600px;
+                background: green;
+            }
+        }
+        
+        @keyframes wqqrun2 {
+            0% {
+                /*百分比这种写法能支持多种状态的写法*/
+                /*初始状态*/
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+            25% {
+                /*中间状态*/
+                width: 200px;
+                height: 400px;
+                background: yellow;
+            }
+            50% {
+                /*中间状态*/
+                width: 200px;
+                height: 500px;
+                background: blue;
+            }
+            100% {
+                /*结束状态*/
+                width: 400px;
+                height: 600px;
+                background: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

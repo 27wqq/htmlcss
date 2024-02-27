@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒修改主轴方向</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+           
+        }
+        .box div{
+            width: 100px;
+            /* height: 100px; */
+            border: 1px dashed red ;
+            
+
+        }
+        .div1{
+            height: 100px;
+            align-self: flex-start;
+        }
+        .div2{
+            height: 100px;
+            align-self: flex-end;
+        }
+        .div3{
+            height: 100px;
+            align-self: center;
+        }
+        .div4{
+            height: 100px;
+            align-self:baseline;
+        }
+        .div5{
+            align-self: stretch;
+            /* 拉伸，铺满屏幕 如果忘记设置height stretch也会默认拉伸铺满屏幕 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 我们把弹性盒也就是有设置成display: flex的整个盒子称之为容器，里面的每一块称为项目 -->
+
+    <div class="box">
+        <div class="div1">111</div>
+        <div class="div2">222</div>
+        <div class="div3">333</div>
+        <div class="div4">444</div>
+        <div class="div5">555</div>
+    </div>
+</body>
+</html>

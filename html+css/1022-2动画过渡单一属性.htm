@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画过渡的单一属性</title>
+    <style>
+        /* 上节我们用的是transition的复合属性 复合属性不支持背景色的动画 */
+        div{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            transition-property: height background;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 2s;
+            /* 前两个属性重点记下 后两个了解就好 */
+
+        }
+        div:hover{
+            height: 600px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

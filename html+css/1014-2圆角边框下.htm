@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 0 auto;
+            border-radius: 30px/60px;
+            /*水平方向上走30垂直方向上走60*/
+            /* border-top-left-radius: 30px/60px;不支持 */
+            /* 30px/60px 水平/垂直 这种写法只支持border-radius */
+            /* border-radius: 10px 20px 30px 40px/50px 60px 70px 80px;四个方向水平垂直不同的 */
+            /* 如何变成圆呢？ →盒子的一半*/
+            /* border-radius: 100px; */
+            border-radius: 50%;
+        }
+        
+        .box2 {
+            width: 500px;
+            height: 200px;
+            background: green;
+            margin: 0 auto;
+            /* 以下如果是长方形的话设成50%是什么效果呢 */
+            border-radius: 30px;
+            margin-bottom: 1px;
+            /* 在长方形中一般使用px来计算 */
+        }
+        
+        .box3 {
+            width: 100px;
+            height: 50px;
+            background: green;
+            margin: 0 auto;
+            border-radius: 50px 50px 0 0;
+        }
+        
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 0 auto;
+            /* border-top-left-radius: 200px; */
+            border-radius: 200px 0 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <!-- 绘制半圆则需要正方形 -->
+
+
+</body>
+
+</html>

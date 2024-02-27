@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            border: 5px solid gray;
+            background: radial-gradient(center, red, green, blue);
+            /* background: linear-gradient(red 50%, blue 50%); */
+        }
+        
+        .box2 {
+            width: 300px;
+            height: 100px;
+            border: 5px solid gray;
+            margin-top: 10px;
+            /* background: radial-gradient(circle, red, green, blue); */
+            background: -webkit-radial-gradient(60% 40%, farthest-side, blue, green, yellow, black);
+        }
+        /*
+        -moz- 若是火狐浏览器则换成这个前缀
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

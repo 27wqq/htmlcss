@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        div {
+            height: 100%;
+            width: 200px;
+            background: red;
+            display: flex;
+            left: 0;
+            top: 0;
+            /* transform: translateX(-200px); */
+            transform: translateX(-100%);
+            /*往左边走藏起来*/
+            /* 100%是相对于自身的100%,比如我们这里定义了width为200px 则百分百就是指的这个200 */
+            animation: run 1s linear forwards reverse;
+            animation-fill-mode: forwards;
+            /*这句也可以不写 直接加在上面的符合属性里*/
+            /* animation-fill-mode: 
+            forwards 保留最后一帧的状态即最后的画面
+            默认值是none 没有
+            backwards是初始画面
+
+            
+            */
+        }
+        
+        @keyframes run {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

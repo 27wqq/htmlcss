@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 目前需求1.首字母放大 */
+        
+        div::first-letter {
+            /* 两个冒号才是伪元素的正确写法 */
+            font-size: 30px;
+            color: red;
+        }
+        
+        div::first-line {
+            /* font-size: 30px; */
+            background: yellow;
+        }
+        /* 以上两个用的比较少了解就行，下面的用的比较频繁 */
+        
+        div::before {
+            content: "aaaaa";
+        }
+        
+        div::after {
+            content: "aaaaa";
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eos odit in eligendi inventore. Ut laudantium, reiciendis maiores nam harum iusto officia cumque facere tenetur nisi nulla dolorum eius qui.
+    </div>
+</body>
+
+</html>

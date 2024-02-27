@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        header {
+            height: 45px;
+            background: gray;
+        }
+        
+        header ul {
+            display: flex;
+            overflow: auto;
+            color: #f8f8f8;
+        }
+        
+        header ul li {
+            flex-shrink: 0;
+            /* 横向滚动 */
+            line-height: 45px;
+            padding: 0 10px;
+        }
+        
+        header ul li:hover {
+            background: white;
+            color: red;
+        }
+        
+        section {
+            flex: 1;
+            display: flex;
+            overflow: auto;
+        }
+        
+        section ul {
+            width: 85px;
+            overflow: auto;
+            /* 设置完overflow: auto;不会再挤压header和footer的空间 */
+        }
+        
+        section ul li {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 14px;
+            background: #f8f8f8;
+        }
+        
+        section ul li:hover {
+            color: red;
+        }
+        
+        section>div {
+            flex: 1;
+            /* background: yellow; */
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            /* align-content: flex-start这句话在内容多的情况下加不加都不影响效果但如果内容少的话就一定要加 */
+            overflow: auto;
+        }
+        
+        footer {
+            height: 50px;
+            background: gray;
+        }
+        
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        section .contet>div {
+            height: 101px;
+            width: 33.33%;
+            /* background: red; */
+            text-align: center;
+        }
+        
+        section .contet>div img {
+            width: 60px;
+            height: 50px;
+            margin-top: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+        </ul>
+    </header>
+    <section>
+        <ul>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+            <li>热点资讯</li>
+        </ul>
+        <div class="contet">
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="1.jpg" alt="">
+                <p>电脑</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>footer</footer>
+</body>
+
+</html>

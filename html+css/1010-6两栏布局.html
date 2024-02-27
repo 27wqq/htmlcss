@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局</title>
+    <!-- <style>法1：用margin-left: 200px先预留出一部分
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box1{
+            width: 200px;
+            height: 100%;
+            background: red;
+            float: left;
+        }
+        .box2{
+            height: 100%;
+            background: yellow;
+            margin-left: 200px;
+            /* 这边就是注意下 宽度不要设置 设置了就不能自适应了 */
+        }
+    </style> -->
+    <!-- 以下是法二 ：使用calc()函数-->
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box1{
+            width: 200px;
+            height: 100%;
+            background: red;
+            float: left;
+        }
+        .box2{
+            width:calc(100% - 200px);
+            /* 这边注意calc()函数 里面的-左右一定要有空格 */
+            height: 100%;
+            background: yellow;
+            float: left;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

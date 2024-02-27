@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            display: block;
+        }
+        .box{
+            width: 350px;
+            margin: 0 auto;
+            border: 5px solid red;
+            position: relative;
+        }
+        img,p,h2{
+            transition: all 1s;
+        }
+        
+        .box h2{
+            position: absolute;
+            left: 60px;
+            top: 100px;
+            color: white;
+            transform: translateY(-200px);
+        }
+        .box:hover h2{
+            transform: translateY(0px);
+        }
+
+        .box:hover .pic{
+            transform: translateY(-20px);
+            opacity: 0.5;
+        }
+        .box .pic{
+            width: 100%;
+        }
+        
+        /* p标签 */
+        .box p{
+            position: absolute;
+            bottom: 0px;
+            left: 80px;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        .box:hover p{
+            transform: translateY(-150px);
+            opacity: 1;
+        }
+
+        /* 音乐按钮 */
+        .box .musicBtn{
+            position: absolute;
+            right: 10px;
+            top:10px;
+            width: 40px;
+            height: 40px;
+            
+        }
+        .box:hover .musicBtn{
+            transform: rotate(360deg);
+        }
+    </style>
+<body>
+    <div class="box">
+        <img src="images/3.png" alt="" class="pic">
+        <div>
+            <h2>title</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique fugit quas molestias sequi soluta saepe delectus hic ipsam eum modi molestiae id, pariatur libero dolorum beatae ipsa error repellendus facere.</p>
+        </div>
+        <img src="images/musicBtn.png" alt="" class="musicBtn">
+    </div>
+</body>
+</html>

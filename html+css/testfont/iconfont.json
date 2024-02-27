@@ -1,0 +1,51 @@
+{
+  "id": "3708503",
+  "name": "mytest",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "32243096",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "32243098",
+      "name": "菜单管理",
+      "font_class": "caidanguanli",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "32243102",
+      "name": "检验任务",
+      "font_class": "jianyanrenwu",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "32243106",
+      "name": "查询",
+      "font_class": "chaxun",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "32243111",
+      "name": "删除 垃圾桶",
+      "font_class": "a-shanchulajitong",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "32243116",
+      "name": "新增 添加",
+      "font_class": "a-xinzengtianjia",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    }
+  ]
+}

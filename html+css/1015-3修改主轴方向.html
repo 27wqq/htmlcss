@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒修改主轴方向</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            /* 弹性盒 */
+            flex-direction: column-reverse;
+            /* column竖直方向 row横向 column-reverse竖直反向 row-reverse横反向*/
+        }
+        .box div{
+            width: 100px;
+            height: 50px;
+            border: 1px dashed red ;
+            margin: auto;
+            /* 不用写0 能自动居中 */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 弹性盒是一种新的布局方式，特别适合移动端布局 -->
+
+    <div class="box">
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <div>444</div>
+    </div>
+</body>
+</html>

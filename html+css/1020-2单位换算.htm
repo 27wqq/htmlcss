@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            /* font-size: 100px; */
+            font-size: 26.67vw;
+        }
+        div{
+            width: 3.75rem;
+            /* 所以要想玩vw就是要完成以下几点：
+            1.量取设计稿宽度/2后写到代码中
+            2.然后font-size就写成100好算 然后算出1px等于多少vm后 写入font-size */
+            height: 100px;
+            background: yellow;
+        }
+        /* 以Iphone6为例 100vw == 375px 
+        就是 375px == 100vw
+        则1px=100/375  0.2667vm  所以html中的font-size: 26.67vw; */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

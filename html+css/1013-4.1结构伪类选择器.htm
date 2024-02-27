@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 940px;
+            height: 100px;
+            margin: 0 auto;
+            background: yellow;
+        }
+        
+        .box div {
+            float: left;
+            width: 300px;
+            height: 100px;
+            background: red;
+            margin-right: 20px;
+        }
+        /* .box .last {
+            margin-right: 0;
+            之前我们是通过给最后一个孩子清边框来实现的
+        } */
+        
+        .box div:last-child {
+            margin-right: 0;
+        }
+        
+        li:first-child {
+            background: yellow;
+        }
+        
+        li:nth-child(2) {
+            /* 第几个 */
+            background: blue;
+        }
+        
+        li:nth-child(even) {
+            /* 第几个，偶数2n/even  奇数2n+1 2n-1/odd*/
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div class="last"></div>
+    </div>
+    <br>
+    <ul>
+        <li>111111</li>
+        <li>222222</li>
+        <li>333333</li>
+        <li>444444</li>
+        <li>555555</li>
+    </ul>
+
+
+
+</body>
+
+</html>

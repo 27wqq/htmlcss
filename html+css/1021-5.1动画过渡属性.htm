@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* transition: height 2s; */
+            /* transition是一直在观察高度的，只要你改了高度 就会变化 */
+            transition: all 2s linear 2s;
+            /* all 所有属性
+            2s 动画时间
+            linear 匀速
+            2s 延迟 
+            
+            除了display:none/block属性 这两个属性不支持
+            */
+
+        }
+        div:hover{
+            height: 600px;
+            /* transition: height 2s; transition加在这里 鼠标一移开就没了 所以不能加在这个位置 */
+            width: 600px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

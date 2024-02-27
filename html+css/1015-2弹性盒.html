@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+        }
+        .box span{
+            width: 100px;
+            height: 50px;
+            border: 1px dashed red ;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 弹性盒是一种新的布局方式，特别适合移动端布局 -->
+    <!-- 影响：
+        1.子元素默认横向排列
+        2.若是行内元素，则变成了块级元素
+        3.只有一个元素的时候，margin：auto自动居中
+
+    -->
+    <div class="box">
+        <span>111</span>
+        <!-- <span>222</span>
+        <span>333</span>
+        <span>444</span>
+        <span>555</span> -->
+    </div>
+</body>
+</html>

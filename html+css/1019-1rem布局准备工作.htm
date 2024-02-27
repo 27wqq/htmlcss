@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 20px;
+            /* 3.如果把这个font-size基准从16px换成20px js中的公式也换成20  发现.box中的width还是默认以16px为基准进行转换的 怎么改？
+            点开文件→首选项→设置→搜 px →CSSrem root →ctrl+s保存 发现width就对应改了*/
+        }
+        .box{
+            width: 37.5rem;
+            /* 2.按快捷键f1弹出搜索框 选择 CSSREM 点击则会把页面代码中的PX转化成rem  或者width:750px- 自动转化*/
+            
+            height: 6.25rem;
+            background: yellow;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize=document.documentElement.clientWidth/750 * 20 +'px'
+
+        //1.fontsize =当前设备的css布局宽度/物理分辨率（设计稿的宽度）* 基准font-size
+    </script>
+</head>
+<body>
+    <div class="box">赵钱孙李</div>
+</body>
+</html>

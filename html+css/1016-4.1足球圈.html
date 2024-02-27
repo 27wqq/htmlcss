@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0
+        }
+        ul{
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 44px;
+            background: #0cc440;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header div{
+            width: 60px;
+            /*提供的设计图是物理像素图 必须除以2*/
+            /* 多写点弹性盒和百分比 少写死固定宽高 */
+            height: 24px;
+            
+            line-height: 24px;
+            text-align: center;
+        }
+        header div:nth-child(1){
+            border-radius: 12px 0px 0px 12px;
+            background: #63d985;
+            color: white;
+        }
+        header div:nth-child(2){
+            border-radius: 0px 12px 12px 0px;
+            background: #3dd066;
+            color: #a0ecae;
+        }
+        /* section{
+
+        }
+        footer{
+
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section></section>
+    <footer></footer>
+</body>
+</html>

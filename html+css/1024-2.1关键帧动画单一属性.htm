@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键帧动画的单一属性</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation-name: wqqrun1;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            /* animation-delay: 5s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            /* normal 正常
+                reverse 反方向：从to到from的运动
+                alternate 正常方向-交替运动
+                alternate-reverse反方向-交替
+
+             */
+        }
+        
+        div:hover {
+            animation-play-state: paused;
+            /* running
+            paused */
+        }
+        /* 声明动画 */
+        
+        @keyframes wqqrun1 {
+            from {
+                /*from to这种写法只能支持两种状态的写法*/
+                /*初始状态*/
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+            to {
+                /*结束状态*/
+                width: 400px;
+                height: 600px;
+                background: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

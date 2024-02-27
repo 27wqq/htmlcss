@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testfont\iconfont.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0
+        }
+        ul{
+            list-style: none;
+        }
+        html,body{
+            height: 100%;
+        }
+        html{
+            font-size: 20px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height: 2.2rem;
+            background: #0cc440;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header div{
+            width: 3rem;
+            /*提供的设计图是物理像素图 必须除以2*/
+            /* 多写点弹性盒和百分比 少写死固定宽高 */
+            height: 1.2rem;
+            
+            line-height: 1.2rem;
+            text-align: center;
+        }
+        header div:nth-child(1){
+            border-radius: .6rem 0rem 0rem .6rem;
+            background: #63d985;
+            color: white;
+        }
+        header div:nth-child(2){
+            border-radius: 0rem .6rem .6rem 0rem;
+            background: #3dd066;
+            color: #a0ecae;
+        }
+        section{
+            flex: 1;
+            overflow: auto;
+        }
+        section ul{
+            display: flex;
+            position: sticky;
+            top: 0rem;
+            background: white;
+        }
+        section ul li{
+            flex: 1;
+            text-align: center;
+            height: 1.75rem;
+            line-height: 1.75rem;
+            border-bottom: .05rem solid #d9d9d9;
+            color: #8c8c8c;
+            font-size: .7rem;
+        }
+        section ul li:hover{
+            border-bottom: .1rem solid #0cc440;
+            color: #14bf4d;
+        }
+        section .list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section .list>div{
+            width: 49%;
+            margin-top: .2rem;
+            border: .05rem solid gray;
+        }
+        section .list>div img{
+            width: 100%;
+        }
+        section .list>div span{
+            height: 1.5rem;
+            line-height: 1.5rem;
+            font-size: .6rem;
+            text-indent: .5rem;
+        }
+        footer{
+            height: 2.2rem;
+            background: white;
+            color:#d5d5d7;
+        }
+        footer ul{
+            display: flex;
+            height: 100%;
+            
+        }
+        footer li{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        footer li:hover{
+            color: #0cc53c;
+        }
+        footer  li i{
+            height: 1.05rem;
+            line-height: 1.05rem;
+            text-align: center;
+            font-size: .8rem;
+        }
+        footer ul li span{
+            height: .85rem;
+            line-height: .85rem;
+            text-align: center;
+            font-size: .6rem;
+        }
+        footer li:nth-child(3){
+            position: relative;
+        }
+        footer li:nth-child(3) i{
+            width: 2.5rem;
+            height: 2.5rem;
+            border: .05rem solid gray;
+            border-radius: 50%;
+            /* 改成一个圆 */
+            position: absolute;
+            left: 50%;
+            margin-left: -25%;
+            top:-0.4rem;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 2.5rem;
+            background: white;
+            
+        }
+        .iconfont{
+            font-size: .8rem;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize=document.documentElement.clientWidth/320 * 20 +'px'
+        //学完rem看这节 就是 公式中的物理分辨率 不能死记硬背 要看代码中各模块的页面是否已经除以2了
+        //1.fontsize =当前设备的css布局宽度/物理分辨率（设计稿的宽度）* 基准font-size
+
+        // rem 等比例缩放布局
+    </script>
+</head>
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+        <div class="list">
+            <div>
+                <img src="1.jpg" alt="">
+                <span>大家好</span>
+            </div>
+            <div> <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> 
+                <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div> 
+                <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+            <div>
+                <img src="1.jpg" alt="">
+                <span>大家好</span></div>
+
+            </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <i class="iconfont icon-jianyanrenwu"></i>
+                <span>首页</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jianyanrenwu"></i>
+                <span>首页</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jianyanrenwu"></i>
+                <span></span>
+            </li>
+            <li>
+                <i class="iconfont icon-jianyanrenwu"></i>
+                <span>首页</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jianyanrenwu"></i>
+                <span>首页</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

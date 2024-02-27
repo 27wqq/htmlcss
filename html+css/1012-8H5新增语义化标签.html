@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        header,
+        footer {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: orange;
+        }
+        
+        section {
+            height: calc(100% - 100px);
+        }
+        
+        nav,
+        aside {
+            width: 100px;
+            height: 100%;
+            background: #ccc;
+            float: left;
+        }
+        
+        main {
+            float: left;
+            width: calc(100% - 200px);
+            background: white;
+            height: 100%;
+        }
+        
+        aside p {
+            color: white;
+        }
+        
+        main .articl1 {
+            height: 60%;
+        }
+        
+        main .articl2 {
+            height: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <section>
+        <nav>
+            <figure>nav</figure>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </nav>
+        <main>
+            <article class="articl1">
+                <header>article-header</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus incidunt quasi expedita cupiditate nam fugit, saepe placeat atque similique, sint necessitatibus. Optio quasi atque molestiae? Similique enim repellat eum aspernatur.</p>
+                <footer>article-footer</footer>
+            </article>
+            <article class="articl2">
+                <header>article-header</header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus incidunt quasi expedita cupiditate nam fugit, saepe placeat atque similique, sint necessitatibus. Optio quasi atque molestiae? Similique enim repellat eum aspernatur.</p>
+                <footer>article-footer</footer>
+            </article>
+        </main>
+        <aside>
+            <figure>aside</figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate corporis cum culpa, doloremque vero quae, ex consequuntur aspernatur repellendus molestias, quia cupiditate accusamus sunt tempora quisquam ipsa maxime temporibus.</p>
+        </aside>
+    </section>
+    <footer>footer</footer>
+</body>
+
+</html>

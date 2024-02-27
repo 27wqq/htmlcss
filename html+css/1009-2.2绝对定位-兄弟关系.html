@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟关系</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            position: absolute;
+           top: 100px;
+           left: 100px;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* 因为box2写在后面，“后来者居上”，所以box2会盖住box1 */
+            /* 如果要让box1盒子在上，则写z-index属性来控制就行 值大的就会在上 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <!-- <div class="child"></div> -->
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

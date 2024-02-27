@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .left,.right{
+            width: 200px;
+            height: 100%;
+        }
+        .left{
+            background: yellow;
+            float: left;
+        }
+        .right{
+            background: red;
+            float: right;
+        }
+        .center{
+            height: 100%;
+            background: blue;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="left"></div>
+    <div class="center"></div>浮动会影响后面的元素 按这样排 则红盒子在下一行
+    <div class="right"></div> -->
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center"></div>
+</body>
+</html>

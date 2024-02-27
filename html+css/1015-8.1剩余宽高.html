@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            
+        }
+        /* .div1{
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+        .div2{
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+        .div3{
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        } */
+        .box div{
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+
+        }
+        .div1,.div3{
+            flex: 1;
+            /* 占满剩余空间 */
+            /* 如果设置一样的则平分 */
+        }
+        .div2{
+            flex: 1;
+            /* 占满剩余空间 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+</html>

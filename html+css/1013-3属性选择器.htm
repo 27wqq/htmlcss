@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器 [,,,] */
+        /* [class] {
+            background: yellow;
+            /* 把所有具有class这个类选择器给选出来 
+        } */
+        
+        div[class] {
+            background: yellow;
+            /* 把div下的所有具有class这个类选择器给选出来，注意不能加空格，加空格则变成了div这个元素的孩子中有class属性的 */
+        }
+        
+        p[class] {
+            background: red;
+        }
+        /* div[class=box1] {
+            /* 完全匹配 
+            border: 1px solid blue;
+        } */
+        
+        div[class~=box1] {
+            /* 包含匹配 */
+            border: 1px solid blue;
+        }
+        /* 模糊匹配
+        class^=b 以这个开头的
+        class$=b 以这个结尾的
+        class*=b 包含某个字符的 */
+        
+        div[class^="b"] {
+            /* 双引号加不加都行 */
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">div-1111</div>
+    <div class="box2">div-2222</div>
+    <div>div-3333</div>
+    <div class="box1">div-4444</div>
+    <div class="box1 box3">div-5555</div>
+    <p class="p1">p-1111</p>
+    <p class="p2">p-2222</p>
+    <p>p-3333</p>
+</body>
+
+</html>

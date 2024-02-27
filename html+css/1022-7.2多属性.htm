@@ -1,0 +1,45 @@
+<!--
+ * @作者: kerwin
+ * @公众号: 大前端私房菜
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            border:2px solid gray;
+        }
+
+        .box div{
+            width: 100px;
+            height: 100px;
+            background:red;
+            border:1px solid black;
+        }
+
+        .box div:nth-child(1){
+            transform: translateX(400px);
+        }
+        .box div:nth-child(2){
+            transform: translateX(400px) rotate(45deg);
+        }
+
+        .box div:nth-child(3){
+            transform:  rotate(45deg) translateX(400px);
+            /* 位移一定要先写前面 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

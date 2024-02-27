@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>你的收获地址</div>
+        <!-- select 支持的属性
+
+        1.size,是显示几个
+        2.multiple,选多个
+        -->
+
+        <!-- option 支持的属性
+
+        1.value,是提供给后端需要用的value值
+        2.selected,默认选中(没有必要多个使用，多个使用也只选中最后一个，
+        如果使用了multiple，seleted可以使用多个默认选中多个)
+        -->
+
+        <select size="1"> 
+        <option value="福建">福建</option>
+        <option value="浙江">浙江</option>
+        <option value="江西">江西</option>
+        <option>上海</option>
+        <option selected>北京</option>
+    </select>
+    </div>
+
+    <div>
+        <select size="3" multiple>
+            <option>桌子</option>
+            <option>凳子</option>
+            <option>椅子</option>
+            <option>电脑</option>
+            <option>鼠标</option>
+        </select>
+    </div>
+</body>
+
+</html>
